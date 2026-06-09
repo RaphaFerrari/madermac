@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mademarc MDF - Venda, Corte, Filetamento e Ferragens</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandYellow: '#FBC000',
+                        brandDark: '#111111',
+                        brandGray: '#F4F4F6',
+                        whatsappGreen: '#25D366'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.hero-bg{
+    background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('./images/1.png');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.card-hover{
+    transition:0.3s ease;
+}
+
+.card-hover:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+.product-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:16px;
+    margin-bottom:18px;
+    background:#f1f1f1;
+}
+
+.section-title{
+    border-left:5px solid #FBC000;
+    padding-left:14px;
+}
+
+@media(max-width:768px){
+
+    .hero-bg{
+        background-position:center;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white shadow-md border-b border-gray-100">
+
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+
+        <div class="flex items-center gap-4">
+
+            <!-- LOGO -->
+            <img src="images/logomademac.png"
+            alt="Mademarc MDF"
+            class="h-24 w-auto object-contain">
+
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-8 font-medium text-sm">
+
+            <a href="#inicio" class="hover:text-yellow-500 transition">
+                Início
+            </a>
+
+            <a href="#produtos" class="hover:text-yellow-500 transition">
+                Produtos
+            </a>
+
+            <a href="#ferragens" class="hover:text-yellow-500 transition">
+                Ferragens
+            </a>
+
+            <a href="#ferramentas" class="hover:text-yellow-500 transition">
+                Ferramentas
+            </a>
+
+            <a href="#contato" class="hover:text-yellow-500 transition">
+                Contato
+            </a>
+
+        </nav>
+
+        <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de solicitar um orçamento."
+        target="_blank"
+        class="bg-whatsappGreen text-white px-5 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition">
+
+            <i class="fa-brands fa-whatsapp mr-2"></i>
+            WhatsApp
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero-bg min-h-[85vh] flex items-center text-white">
+
+    <div class="max-w-7xl mx-auto px-6 py-20">
+
+        <span class="bg-brandYellow text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest inline-block mb-6">
+
+            Venda • Corte • Filetamento • Ferragens
+
+        </span>
+
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
+
+            Soluções completas em MDF, MDP, Ferragens e Marcenaria.
+
+        </h1>
+
+        <p class="text-lg text-gray-300 max-w-2xl mb-10 leading-relaxed">
+
+            Trabalhamos com chapas MDF, MDP, ferragens, ferramentas,
+            corte, filetamento, iluminação e acessórios para móveis planejados.
+
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+
+            <a href="#produtos"
+            class="bg-brandYellow text-black px-8 py-4 rounded-lg font-bold hover:bg-white transition">
+
+                Ver Produtos
+
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de solicitar um orçamento."
+            target="_blank"
+            class="border border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-black transition">
+
+                Solicitar Orçamento
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="py-20 bg-brandGray">
+
+<div class="max-w-7xl mx-auto px-4">
+
+    <div class="text-center mb-16">
+
+        <h2 class="text-4xl font-bold mb-4">
+            Catálogo Completo
+        </h2>
+
+        <p class="text-gray-600 max-w-3xl mx-auto">
+
+            Confira nossa linha completa de materiais para marcenaria,
+            móveis planejados e acabamento profissional.
+
+        </p>
+
+    </div>
+
+    <!-- CHAPAS E REVESTIMENTOS - LISTA DE 55 PRODUTOS -->
+    <div class="mb-16">
+
+        <!-- CABEÇALHO E BUSCA -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+            <h3 class="text-3xl font-bold section-title w-full md:w-auto">
+                Chapas e Revestimentos
+            </h3>
+            <div class="relative w-full md:w-96">
+                <input type="text" id="searchInput" placeholder="Buscar por cor, linha ou fabricante..." 
+                       class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brandYellow focus:border-transparent transition shadow-sm text-sm">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+            <!-- 1. MDF Branco -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-branco-ambiente.png" alt="MDF Branco - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-branco-textura.png" alt="MDF Branco - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Branco</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> TX</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Fosco</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Branco" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 2. MDF Glamour -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-glamour-ambiente.png" alt="MDF Glamour - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-glamour-textura.png" alt="MDF Glamour - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Glamour</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> TX</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Perolado</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Pérola Urbana (Duratex) e Sal Rosa (Arauco). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Glamour" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 3. MDF Carvalho Milenar -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-carvalho-milenar-ambiente.png" alt="MDF Carvalho Milenar - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-carvalho-milenar-textura.png" alt="MDF Carvalho Milenar - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Carvalho Milenar</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Eleva</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Carvalho Milenar" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 4. MDF Jequitibá -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-jequitiba-ambiente.png" alt="MDF Jequitibá - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-jequitiba-textura.png" alt="MDF Jequitibá - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Jequitibá</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Eleva</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Jequitibá" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 5. MDF Pau-Ferro -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-pau-ferro-ambiente.png" alt="MDF Pau-Ferro - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-pau-ferro-textura.png" alt="MDF Pau-Ferro - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Pau-Ferro</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Eleva</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Pau-Ferro" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 6. MDF Carvalho Natural -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-carvalho-natural-ambiente.png" alt="MDF Carvalho Natural - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-carvalho-natural-textura.png" alt="MDF Carvalho Natural - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Carvalho Natural</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Carvalho Natural" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 7. MDF Carvalho Lino -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-carvalho-lino-ambiente.png" alt="MDF Carvalho Lino - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-carvalho-lino-textura.png" alt="MDF Carvalho Lino - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Carvalho Lino</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Carvalho Lino" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 8. MDF Carvalho Castelli -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-carvalho-castelli-ambiente.png" alt="MDF Carvalho Castelli - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-carvalho-castelli-textura.png" alt="MDF Carvalho Castelli - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Carvalho Castelli</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Carvalho Castelli" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 9. MDF Corazzi -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-corazzi-ambiente.png" alt="MDF Corazzi - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-corazzi-textura.png" alt="MDF Corazzi - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Corazzi</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Corazzi" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 10. MDF Louro Freijó (Sudati) -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-louro-freijo-sudati-ambiente.png" alt="MDF Louro Freijó (Sudati) - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-louro-freijo-sudati-textura.png" alt="MDF Louro Freijó (Sudati) - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Louro Freijó (Sudati)</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Louro Freijó (Sudati)" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 11. MDF Leon -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-leon-ambiente.png" alt="MDF Leon - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-leon-textura.png" alt="MDF Leon - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Leon</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Leon" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 12. MDF Cabernet -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-cabernet-ambiente.png" alt="MDF Cabernet - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-cabernet-textura.png" alt="MDF Cabernet - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Cabernet</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Cabernet" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 13. MDF Versati Holande -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-versati-holande-ambiente.png" alt="MDF Versati Holande - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-versati-holande-textura.png" alt="MDF Versati Holande - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Versati Holande</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Versati Holande" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 14. MDF Imbuia -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-imbuia-ambiente.png" alt="MDF Imbuia - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-imbuia-textura.png" alt="MDF Imbuia - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Imbuia</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Imbuia" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 15. MDF Tempranillo -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-tempranillo-ambiente.png" alt="MDF Tempranillo - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-tempranillo-textura.png" alt="MDF Tempranillo - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Tempranillo</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Naturaly</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Tempranillo" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 16. MDF Taipa -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-taipa-ambiente.png" alt="MDF Taipa - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-taipa-textura.png" alt="MDF Taipa - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Taipa</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Soul</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama - Metalizado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Taipa" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 17. MDF Asti -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-asti-ambiente.png" alt="MDF Asti - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-asti-textura.png" alt="MDF Asti - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Asti</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Soul</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama - Metalizado</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Prata (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Asti" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 18. MDF Alessi -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-alessi-ambiente.png" alt="MDF Alessi - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-alessi-textura.png" alt="MDF Alessi - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Alessi</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Soul</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Lino Piombo Chess (Arauco). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Alessi" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 19. MDF Cambiasi -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-cambiasi-ambiente.png" alt="MDF Cambiasi - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-cambiasi-textura.png" alt="MDF Cambiasi - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Cambiasi</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Unicolores</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Branco Supermo Chess (Arauco) e Branco Diamante Trama (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Cambiasi" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 20. MDF Floripa -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-floripa-ambiente.png" alt="MDF Floripa - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-floripa-textura.png" alt="MDF Floripa - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Floripa</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Unicolores</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Titânio Trama (Duratex) e Areia Chess (Arauco). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Floripa" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 21. MDF Havana -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-havana-ambiente.png" alt="MDF Havana - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-havana-textura.png" alt="MDF Havana - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Havana</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Unicolores</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Canela Chess (Arauco). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Havana" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 22. MDF Santiago -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-santiago-ambiente.png" alt="MDF Santiago - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-santiago-textura.png" alt="MDF Santiago - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Santiago</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Unicolores</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Gianduia Trama (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Santiago" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 23. MDF Sampa -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-sampa-ambiente.png" alt="MDF Sampa - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-sampa-textura.png" alt="MDF Sampa - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Sampa</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Unicolores</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Cinza Sagrado (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Sampa" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 24. MDF Manhattan -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-manhattan-ambiente.png" alt="MDF Manhattan - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-manhattan-textura.png" alt="MDF Manhattan - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Manhattan</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Unicolores</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Grafito Chess (Arauco). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Manhattan" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 25. MDF Preto Argel -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-preto-argel-ambiente.png" alt="MDF Preto Argel - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-preto-argel-textura.png" alt="MDF Preto Argel - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Preto Argel</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Unicolores</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Ébano Chess (Arauco) e Preto Trama (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Preto Argel" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 26. MDF Cancun -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-cancun-ambiente.png" alt="MDF Cancun - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-cancun-textura.png" alt="MDF Cancun - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Cancun</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Unicolores</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Cancun" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 27. MDF Pipa -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-pipa-ambiente.png" alt="MDF Pipa - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-pipa-textura.png" alt="MDF Pipa - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Pipa</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> Unicolores</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Pipa" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 28. MDF Vulcano -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-vulcano-ambiente.png" alt="MDF Vulcano - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-vulcano-textura.png" alt="MDF Vulcano - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Vulcano</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Sudati MDF | <strong>Linha:</strong> TX</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Natural</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Thassos (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Vulcano" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 29. MDF Arenas -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-arenas-ambiente.png" alt="MDF Arenas - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-arenas-textura.png" alt="MDF Arenas - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Arenas</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> BP Grafis</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Arenas" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 30. MDF Fumê Clássico -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-fume-classico-ambiente.png" alt="MDF Fumê Clássico - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-fume-classico-textura.png" alt="MDF Fumê Clássico - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Fumê Clássico</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> BP Grafis</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Trama</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Fumê Clássico" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 31. MDF Amêndoa Natural -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-amendoa-natural-ambiente.png" alt="MDF Amêndoa Natural - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-amendoa-natural-textura.png" alt="MDF Amêndoa Natural - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Amêndoa Natural</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Poro Supermatt</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Amêndoa Natural" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 32. MDF Nogueira Terracota -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-nogueira-terracota-ambiente.png" alt="MDF Nogueira Terracota - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-nogueira-terracota-textura.png" alt="MDF Nogueira Terracota - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Nogueira Terracota</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Poro Supermatt</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Nogueira Terracota" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 33. MDF Louro Freijó (Eucatex) -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-louro-freijo-eucatex-ambiente.png" alt="MDF Louro Freijó (Eucatex) - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-louro-freijo-eucatex-textura.png" alt="MDF Louro Freijó (Eucatex) - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Louro Freijó (Eucatex)</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Poro Supermatt</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Louro Freijó (Eucatex)" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 34. MDF Cumaru Nativo -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-cumaru-nativo-ambiente.png" alt="MDF Cumaru Nativo - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-cumaru-nativo-textura.png" alt="MDF Cumaru Nativo - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Cumaru Nativo</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Poro Supermatt</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Cumaru Nativo" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 35. MDF Carvalho Brasileiro -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-carvalho-brasileiro-ambiente.png" alt="MDF Carvalho Brasileiro - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-carvalho-brasileiro-textura.png" alt="MDF Carvalho Brasileiro - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Carvalho Brasileiro</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Essência Brasileira</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Carvalho Brasileiro" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 36. MDF Tauari Amazônia -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-tauari-amazonia-ambiente.png" alt="MDF Tauari Amazônia - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-tauari-amazonia-textura.png" alt="MDF Tauari Amazônia - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Tauari Amazônia</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Essência Brasileira</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Tauari Amazônia" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 37. MDF Imbuia Caiapó -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-imbuia-caiapo-ambiente.png" alt="MDF Imbuia Caiapó - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-imbuia-caiapo-textura.png" alt="MDF Imbuia Caiapó - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Imbuia Caiapó</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Essência Brasileira</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Imbuia Caiapó" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 38. MDF Cristal Aqua -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-cristal-aqua-ambiente.png" alt="MDF Cristal Aqua - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-cristal-aqua-textura.png" alt="MDF Cristal Aqua - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Cristal Aqua</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Origens</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Matt Soft</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Cinza Cristal (Placas do Brasil) e Cinza Cristal (Arauco). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Cristal Aqua" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 39. MDF Pétala Rosa -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-petala-rosa-ambiente.png" alt="MDF Pétala Rosa - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-petala-rosa-textura.png" alt="MDF Pétala Rosa - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Pétala Rosa</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Origens</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Matt Soft</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Pétala Rosa" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 40. MDF Cinza Urbano -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-cinza-urbano-ambiente.png" alt="MDF Cinza Urbano - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-cinza-urbano-textura.png" alt="MDF Cinza Urbano - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Cinza Urbano</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Origens</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Matt Soft</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Cinza Urban (Guararapes), Volato (Greenplac) e Beton (Arauco). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Cinza Urbano" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 41. MDF Cinza Supremo -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-cinza-supremo-ambiente.png" alt="MDF Cinza Supremo - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-cinza-supremo-textura.png" alt="MDF Cinza Supremo - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Cinza Supremo</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Origens</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Matt Soft</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Cinza Supremo" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 42. MDF Areia Noronha -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-areia-noronha-ambiente.png" alt="MDF Areia Noronha - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-areia-noronha-textura.png" alt="MDF Areia Noronha - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Areia Noronha</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Origens</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Matt Soft</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Areia (Guararapes) e Beige (Arauco). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Areia Noronha" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 43. MDF Verde Mar -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-verde-mar-ambiente.png" alt="MDF Verde Mar - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-verde-mar-textura.png" alt="MDF Verde Mar - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Verde Mar</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Origens</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Matt Soft</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Vitória Régia (Placas do Brasil), Verde Jade (Arauco), Alecrim (Guararapes) e Mint (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Verde Mar" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 44. MDF Italian Noce -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-italian-noce-ambiente.png" alt="MDF Italian Noce - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-italian-noce-textura.png" alt="MDF Italian Noce - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Italian Noce</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Origens</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Matt Soft</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Italian Noce" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 45. MDF Freijó Brasil -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-freijo-brasil-ambiente.png" alt="MDF Freijó Brasil - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-freijo-brasil-textura.png" alt="MDF Freijó Brasil - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Freijó Brasil</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Origens</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Freijó Brasil" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 46. MDF Peroba Rosa -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-peroba-rosa-ambiente.png" alt="MDF Peroba Rosa - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-peroba-rosa-textura.png" alt="MDF Peroba Rosa - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Peroba Rosa</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Raízes</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Peroba Rosa" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 47. MDF Noce Oro -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-noce-oro-ambiente.png" alt="MDF Noce Oro - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-noce-oro-textura.png" alt="MDF Noce Oro - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Noce Oro</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Coleção Raízes</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Madeirado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Noce Oro" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 48. MDF Preto -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-preto-ambiente.png" alt="MDF Preto - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-preto-textura.png" alt="MDF Preto - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Preto</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> TX</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Fosco</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Preto" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 49. MDF Branco Neve -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-branco-neve-ambiente.png" alt="MDF Branco Neve - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-branco-neve-textura.png" alt="MDF Branco Neve - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Branco Neve</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Lacca Ad</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Laqueado</p>
+                    <p class="text-sm text-gray-600 mb-5">Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Branco Neve" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 50. MDF Cinza Itália -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-cinza-italia-ambiente.png" alt="MDF Cinza Itália - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-cinza-italia-textura.png" alt="MDF Cinza Itália - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Cinza Itália</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Lacca Ad</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Laqueado</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Titânio Cristallo (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Cinza Itália" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 51. MDF Fumê -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-fume-ambiente.png" alt="MDF Fumê - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-fume-textura.png" alt="MDF Fumê - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Fumê</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Lacca Ad</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Laqueado</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao GianduiaCristallo (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Fumê" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 52. MDF Preto Onix -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/mdf-preto-onix-ambiente.png" alt="MDF Preto Onix - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/mdf-preto-onix-textura.png" alt="MDF Preto Onix - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">MDF Preto Onix</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Lacca Ad</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Laqueado</p>
+                    <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Preto Cristallo (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Preto Onix" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 53. Ripado Peroba Rosa -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/ripado-peroba-rosa-ambiente.png" alt="Ripado Peroba Rosa - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/ripado-peroba-rosa-textura.png" alt="Ripado Peroba Rosa - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Ripado Peroba Rosa</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Ripado em Barras</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Não informado</p>
+                    <p class="text-sm text-gray-600 mb-5">Ripado em barras. Pode haver variação visual dependendo da aplicação.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o Ripado Peroba Rosa" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 54. Ripado Freijó Brasil -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/ripado-freijo-brasil-ambiente.png" alt="Ripado Freijó Brasil - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/ripado-freijo-brasil-textura.png" alt="Ripado Freijó Brasil - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Ripado Freijó Brasil</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Ripado em Barras</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Não informado</p>
+                    <p class="text-sm text-gray-600 mb-5">Ripado em barras. Pode haver variação visual dependendo da aplicação.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o Ripado Freijó Brasil" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+            <!-- 55. Ripado Noce Oro -->
+            <div class="bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
+                        <img src="images/mdf/ripado-noce-oro-ambiente.png" alt="Ripado Noce Oro - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
+                        <img src="images/mdf/ripado-noce-oro-textura.png" alt="Ripado Noce Oro - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Ripado Noce Oro</h4>
+                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Ripado em Barras</p>
+                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Não informado</p>
+                    <p class="text-sm text-gray-600 mb-5">Ripado em barras. Pode haver variação visual dependendo da aplicação.</p>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o Ripado Noce Oro" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ========================================================= -->
+<!-- TODOS OS PRODUTOS DISPONÍVEIS -->
+<!-- ========================================================= -->
+
+<div class="max-w-7xl mx-auto px-4">
+    <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mt-16">
+
+        <h3 class="text-3xl font-bold mb-10 text-center">
+            Todos os Produtos Disponíveis
+        </h3>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
+
+            <!-- CARD MDP -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+
+                <img src="https://images.unsplash.com/photo-1581093458791-9d42e9f8c390?q=80&w=1200&auto=format&fit=crop"
+                    alt="MDP"
+                    class="w-full h-52 object-cover">
+
+                <div class="p-6 flex-1 flex flex-col">
+
+                    <h4 class="font-bold text-2xl mb-4 text-brandDark">
+                        MDP
+                    </h4>
+
+                    <ul class="space-y-3 flex-1">
+
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para MDP Branco"
+                                target="_blank"
+                                class="hover:text-green-600 transition">
+
+                                MDP Branco
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para MDP Madeirado"
+                                target="_blank"
+                                class="hover:text-green-600 transition">
+
+                                MDP Madeirado
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para MDP Cru"
+                                target="_blank"
+                                class="hover:text-green-600 transition">
+
+                                MDP Cru
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para MDP BP"
+                                target="_blank"
+                                class="hover:text-green-600 transition">
+
+                                MDP BP
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- COMPENSADOS -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
+                    alt="Compensados"
+                    class="w-full h-52 object-cover">
+
+                <div class="p-6 flex-1 flex flex-col">
+
+                    <h4 class="font-bold text-2xl mb-4 text-brandDark">
+                        Compensados e Outros
+                    </h4>
+
+                    <ul class="space-y-3 flex-1">
+
+                        <li>Compensado Naval</li>
+                        <li>Compensado Plastificado</li>
+                        <li>Compensado Pinus</li>
+                        <li>OSB</li>
+                        <li>Duratex</li>
+                        <li>Eucatex</li>
+                        <li>Fórmica</li>
+                        <li>Laminado Melamínico</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- FITAS -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop"
+                    alt="Fitas de Borda"
+                    class="w-full h-52 object-cover">
+
+                <div class="p-6 flex-1 flex flex-col">
+
+                    <h4 class="font-bold text-2xl mb-4 text-brandDark">
+                        Fitas de Borda
+                    </h4>
+
+                    <ul class="space-y-3 flex-1">
+
+                        <li>Fita PVC</li>
+                        <li>Fita ABS</li>
+                        <li>Fita Melamínica</li>
+                        <li>Fita Branca</li>
+                        <li>Fita Madeirada</li>
+                        <li>Fita Alto Brilho</li>
+                        <li>Fita Fosca</li>
+                        <li>Cola Hot Melt</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- INSUMOS -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop"
+                    alt="Insumos"
+                    class="w-full h-52 object-cover">
+
+                <div class="p-6 flex-1 flex flex-col">
+
+                    <h4 class="font-bold text-2xl mb-4 text-brandDark">
+                        Insumos
+                    </h4>
+
+                    <ul class="space-y-3 flex-1">
+
+                        <li>Cola Branca PVA</li>
+                        <li>Cola de Contato</li>
+                        <li>Cola PU</li>
+                        <li>Silicone</li>
+                        <li>Massa para Madeira</li>
+                        <li>Cera Reparadora</li>
+                        <li>Limpa MDF</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- FERRAGENS -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop"
+                    alt="Ferragens"
+                    class="w-full h-52 object-cover">
+
+                <div class="p-6 flex-1 flex flex-col">
+
+                    <h4 class="font-bold text-2xl mb-4 text-brandDark">
+                        Ferragens para Móveis
+                    </h4>
+
+                    <ul class="space-y-3 flex-1">
+
+                        <li>Dobradiça Reta</li>
+                        <li>Dobradiça Curva</li>
+                        <li>Dobradiça Super Curva</li>
+                        <li>Dobradiça com Amortecimento</li>
+                        <li>Dobradiça Caneco 35mm</li>
+                        <li>Corrediça Telescópica</li>
+                        <li>Corrediça Invisível</li>
+                        <li>Corrediça Simples</li>
+                        <li>Corrediça Push Open</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- PUXADORES -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+
+                <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop"
+                    alt="Puxadores"
+                    class="w-full h-52 object-cover">
+
+                <div class="p-6 flex-1 flex flex-col">
+
+                    <h4 class="font-bold text-2xl mb-4 text-brandDark">
+                        Puxadores e Perfis
+                    </h4>
+
+                    <ul class="space-y-3 flex-1">
+
+                        <li>Puxador Alumínio Perfil</li>
+                        <li>Puxador Cava</li>
+                        <li>Puxador Inox</li>
+                        <li>Puxador Embutido</li>
+                        <li>Puxador Colonial</li>
+                        <li>Perfil Gola</li>
+                        <li>Perfil Alumínio</li>
+                        <li>Perfil LED</li>
+                        <li>Perfil Puxador</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contato" class="bg-black text-gray-400 py-16">
+
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-10">
+
+        <div>
+
+            <img src="images/logomademac.png"
+            alt="Logo"
+            class="h-24 w-auto mb-5 object-contain">
+
+            <p class="text-sm leading-relaxed">
+
+                Empresa especializada em MDF, ferragens,
+                corte, filetamento e soluções completas para marcenaria.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4 class="text-white font-bold mb-5">
+                Contato
+            </h4>
+
+            <ul class="space-y-3 text-sm">
+
+                <li>
+                    <i class="fa-solid fa-phone mr-2 text-brandYellow"></i>
+                    (31) 3471-5077
+                </li>
+
+                <li>
+                    <i class="fa-brands fa-whatsapp mr-2 text-brandYellow"></i>
+                    (31) 3471-5077
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-envelope mr-2 text-brandYellow"></i>
+                    contato@empresa.com.br
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4 class="text-white font-bold mb-5">
+                Endereço
+            </h4>
+
+            <p class="text-sm leading-relaxed">
+
+                Av. Industrial da Madeira, 1200<br>
+                Distrito Industrial<br>
+                Brasil
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4 class="text-white font-bold mb-5">
+                Redes Sociais
+            </h4>
+
+            <div class="flex gap-4 text-xl">
+
+                <a href="https://www.instagram.com/mademarc_mdf/"
+                target="_blank"
+                class="hover:text-brandYellow transition">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <a href="https://api.whatsapp.com/send?phone=553134715077"
+                target="_blank"
+                class="hover:text-green-500 transition">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="border-t border-gray-800 mt-14 pt-8 text-center text-sm">
+
+        © 2026 Mademarc MDF - Todos os direitos reservados.
+
+    </div>
+
+</footer>
+
+<!-- SCRIPT DE BUSCA DOS PRODUTOS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('searchInput');
+        const productGrid = document.getElementById('productGrid');
+        
+        if(searchInput && productGrid) {
+            // Pega todos os cards de produto de dentro do grid
+            const productCards = Array.from(productGrid.children);
+
+            searchInput.addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase().trim();
+
+                productCards.forEach(card => {
+                    // Pegamos todo o texto de dentro do card (Título, Fabricante, Descrição, etc)
+                    const cardText = card.textContent.toLowerCase();
+                    
+                    if (cardText.includes(searchTerm)) {
+                        card.style.display = 'flex'; // Mantém o flex do card para não quebrar o layout
+                    } else {
+                        card.style.display = 'none'; // Esconde se não encontrar
+                    }
+                });
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
