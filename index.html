@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mademarc MDF</title>
+    <title>Mademarc MDF - Venda, Corte, Filetamento e Ferragens</title>
 
     <!-- ÍCONE DO NAVEGADOR (FAVICON) -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -48,8 +48,9 @@ body{
 
 .hero-bg{
     background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url('./imagens/1.png');
+    /* Reduzi a opacidade de 0.75 para 0.4 para o banner aparecer melhor */
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('imagens/banner.jpeg'); /* Banner atualizado para .jpeg */
 
     background-size:cover;
     background-position:center;
@@ -96,18 +97,24 @@ body{
 <!-- HEADER -->
 <header class="sticky top-0 z-50 bg-white shadow-md border-b border-gray-100">
 
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between flex-wrap">
 
         <div class="flex items-center gap-4">
 
             <!-- LOGO -->
-            <img src="imagens/logo.jfif"
+            <img src="logo.jfif"
             alt="Mademarc MDF"
             class="h-24 w-auto object-contain">
 
         </div>
 
-        <nav class="hidden lg:flex items-center gap-8 font-medium text-sm">
+        <!-- BOTAO MENU MOBILE -->
+        <button id="mobileMenuBtn" class="lg:hidden text-2xl text-gray-800 focus:outline-none p-2">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- NAV -->
+        <nav id="navMenu" class="hidden w-full lg:w-auto lg:flex flex-col lg:flex-row items-center gap-4 lg:gap-8 font-medium text-sm mt-4 lg:mt-0 pb-4 lg:pb-0">
 
             <a href="#inicio" class="hover:text-yellow-500 transition">
                 Início
@@ -129,11 +136,20 @@ body{
                 Contato
             </a>
 
+            <!-- BOTAO WHATSAPP MOBILE -->
+            <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de solicitar um orçamento."
+            target="_blank"
+            class="lg:hidden bg-whatsappGreen text-white px-5 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition w-full text-center mt-2">
+                <i class="fa-brands fa-whatsapp mr-2"></i>
+                WhatsApp
+            </a>
+
         </nav>
 
+        <!-- BOTAO WHATSAPP DESKTOP -->
         <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de solicitar um orçamento."
         target="_blank"
-        class="bg-whatsappGreen text-white px-5 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition">
+        class="hidden lg:inline-flex bg-whatsappGreen text-white px-5 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition items-center">
 
             <i class="fa-brands fa-whatsapp mr-2"></i>
             WhatsApp
@@ -144,7 +160,7 @@ body{
 
 </header>
 
-<!-- HERO -->
+<!-- HERO / BANNER -->
 <section id="inicio" class="hero-bg min-h-[85vh] flex items-center text-white">
 
     <div class="max-w-7xl mx-auto px-6 py-20">
@@ -893,7 +909,6 @@ body{
             <div class="product-card bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
                 <div>
                     <div class="relative group w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
-                        <!-- Note o nome ajustado: feijo (conforme enviado na lista) -->
                         <img src="imagens/mdf-feijo-brasil-ambiente.png" alt="MDF Freijó Brasil - Ambiente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 z-10 group-hover:opacity-0" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
                         <img src="texturas/mdf-feijo-brasil-textura.png" alt="MDF Freijó Brasil - Textura" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.src='https://placehold.co/400x300?text=Textura'">
                     </div>
@@ -1008,62 +1023,6 @@ body{
                     <p class="text-sm text-gray-600 mb-5">Padrão de cor similar ou muito próximo ao Preto Cristallo (Duratex). Podem ocorrer variações de cores conforme a tela utilizada para visualização. Sugerimos ver o painel inteiro ou amostra maior em nossa loja.</p>
                 </div>
                 <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o MDF Preto Onix" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
-            </div>
-
-        </div>
-
-        <!-- RIPADOS - CABEÇALHO -->
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-            <h3 class="text-3xl font-bold section-title w-full md:w-auto">
-                Ripados
-            </h3>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-            <!-- 53. Ripado Peroba Rosa -->
-            <div class="product-card bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
-                <div>
-                    <div class="relative w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
-                        <!-- Ajustado para puxar da pasta 'ripados' -->
-                        <img src="ripados/ripado-peroba-rosa.png" alt="Ripado Peroba Rosa - Ambiente" class="absolute inset-0 w-full h-full object-cover z-10" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
-                    </div>
-                    <h4 class="font-bold text-lg mb-2">Ripado Peroba Rosa</h4>
-                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Ripado em Barras</p>
-                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Não informado</p>
-                    <p class="text-sm text-gray-600 mb-5">Ripado em barras. Pode haver variação visual dependendo da aplicação.</p>
-                </div>
-                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o Ripado Peroba Rosa" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
-            </div>
-
-            <!-- 54. Ripado Freijó Brasil -->
-            <div class="product-card bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
-                <div>
-                    <div class="relative w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
-                        <!-- Ajustado para puxar da pasta 'ripados' -->
-                        <img src="ripados/ripado-freijo-brasil.png" alt="Ripado Freijó Brasil - Ambiente" class="absolute inset-0 w-full h-full object-cover z-10" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
-                    </div>
-                    <h4 class="font-bold text-lg mb-2">Ripado Freijó Brasil</h4>
-                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Ripado em Barras</p>
-                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Não informado</p>
-                    <p class="text-sm text-gray-600 mb-5">Ripado em barras. Pode haver variação visual dependendo da aplicação.</p>
-                </div>
-                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o Ripado Freijó Brasil" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
-            </div>
-
-            <!-- 55. Ripado Noce Oro -->
-            <div class="product-card bg-white rounded-2xl p-6 shadow-md card-hover flex flex-col justify-between">
-                <div>
-                    <div class="relative w-full h-[220px] mb-[18px] rounded-[16px] overflow-hidden bg-[#f1f1f1]">
-                        <!-- Ajustado para puxar da pasta 'ripados' -->
-                        <img src="ripados/ripado-noce-oro.png" alt="Ripado Noce Oro - Ambiente" class="absolute inset-0 w-full h-full object-cover z-10" onerror="this.src='https://placehold.co/400x300?text=Ambiente'">
-                    </div>
-                    <h4 class="font-bold text-lg mb-2">Ripado Noce Oro</h4>
-                    <p class="text-xs text-gray-500 mb-1"><strong>Fabricante:</strong> Eucatex | <strong>Linha:</strong> Ripado em Barras</p>
-                    <p class="text-xs text-gray-500 mb-3"><strong>Acabamento:</strong> Não informado</p>
-                    <p class="text-sm text-gray-600 mb-5">Ripado em barras. Pode haver variação visual dependendo da aplicação.</p>
-                </div>
-                <a href="https://api.whatsapp.com/send?phone=553134715077&text=Olá! Gostaria de orçamento para o Ripado Noce Oro" target="_blank" class="block text-center bg-whatsappGreen text-white py-3 rounded-lg font-semibold mt-auto">Solicitar no WhatsApp</a>
             </div>
 
         </div>
@@ -1190,12 +1149,12 @@ body{
 
             </div>
 
-            <!-- INSUMOS -->
-            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+            <!-- INSUMOS (Id adicionado para o menu funcionar) -->
+            <div id="ferramentas" class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col scroll-mt-32">
                 <div class="p-6 flex-1 flex flex-col">
 
                     <h4 class="font-bold text-2xl mb-4 text-brandDark">
-                        Insumos
+                        Insumos & Ferramentas
                     </h4>
 
                     <ul class="space-y-3 flex-1">
@@ -1214,8 +1173,8 @@ body{
 
             </div>
 
-            <!-- FERRAGENS -->
-            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
+            <!-- FERRAGENS (Id adicionado para o menu funcionar) -->
+            <div id="ferragens" class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col scroll-mt-32">
                 <div class="p-6 flex-1 flex flex-col">
 
                     <h4 class="font-bold text-2xl mb-4 text-brandDark">
@@ -1279,7 +1238,7 @@ body{
 
         <div>
 
-            <img src="imagens/logo.jfif"
+            <img src="logo.jfif"
             alt="Logo"
             class="h-24 w-auto mb-5 object-contain">
 
@@ -1376,6 +1335,30 @@ body{
 <!-- SCRIPT DE BUSCA DOS PRODUTOS -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        
+        // LÓGICA DO MENU MOBILE
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (mobileMenuBtn && navMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('flex');
+            });
+
+            // Fechar o menu ao clicar num link (em ecrãs pequenos)
+            const navLinks = navMenu.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 1024) {
+                        navMenu.classList.add('hidden');
+                        navMenu.classList.remove('flex');
+                    }
+                });
+            });
+        }
+
+        // LÓGICA DA BUSCA DE PRODUTOS
         const searchInput = document.getElementById('searchInput');
         
         if(searchInput) {
